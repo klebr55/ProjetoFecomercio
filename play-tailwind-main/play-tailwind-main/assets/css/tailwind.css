@@ -2623,17 +2623,15 @@ body {
 
   .bg-secondary {
   background-color: #ffffff !important;
-}
+  }
 
   .bg-transparent {
   background-color: rgb(250, 254, 255) !important;
-}
+  }
 
   .navbar-expand-lg {
     background-color: white;
   }
-  
-  .relative {
-    color: white;
-    background-color: white;
-}
+
+
+
