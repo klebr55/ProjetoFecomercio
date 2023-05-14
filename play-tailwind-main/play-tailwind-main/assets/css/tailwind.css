@@ -479,18 +479,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .color-titulo{
   font-size: 50px;
   font-family: "Mancunium Regular", Arial, sans-serif;
-  color: #052F82;
-  text-decoration: underline;
+  color: #000000;
 }
-.color-subtitulo{
-  font-size: 50px;
-  margin-left: 37%;
-  margin-top: -60px;
-  color: #AD8331;
-  text-decoration: underline;
-}
+
 #nome-extenso{
-  color: #052F82;
+  color: #000000;
   font-family: "Mancunium Regular", Arial, sans-serif;
 }
 .container {
@@ -2628,8 +2621,8 @@ body {
   }
 }
 
-  .bg-white {
-  background-color: white !important;
+  .bg-secondary {
+  background-color: #ffffff !important;
 }
 
   .bg-transparent {
@@ -2639,3 +2632,8 @@ body {
   .navbar-expand-lg {
     background-color: white;
   }
+  
+  .relative {
+    color: white;
+    background-color: white;
+}
