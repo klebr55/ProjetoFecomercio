@@ -210,7 +210,7 @@
               class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
               data-wow-delay=".2s"
             >
-            <h1 class="color-titulo">Acompanhe as principais notícias</h1>
+            <h1 id="color-titulo" class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]">Acompanhe as principais notícias</h1>
               <p
                 class="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
               id="nome-extenso">
@@ -225,41 +225,42 @@
             </div>
           </div>
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
 
-              <!-- Início indicadores -->
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <!-- Fim indicadores -->
-
-              <!-- Início slides carousel -->
-              <div class="carousel-inner" style="height: 29em;">
-                <div class="carousel-item h-100 active" style="background: url(https://wallpaperaccess.com/full/1369012.jpg) center/contain no-repeat">
-                  
-                </div>
-                <div class="carousel-item h-100" style="background: url(https://fecomerciomt.org.br/wp-content/uploads/2023/04/BANNER-_-Presidente-da-Fecomercio-MT-participa-de-inauguracao-do-escritorio-da-CNC-em-Portugal.jpg) center/contain no-repeat">
-                  
-                </div>
-                <div class="carousel-item h-100" style="background: url(https://fecomerciomt.org.br/wp-content/uploads/2023/04/BANNER-_-Presidente-da-Fecomercio-MT-participa-de-inauguracao-do-escritorio-da-CNC-em-Portugal.jpg) center/contain no-repeat">
-                  
-                </div>
-              </div>
-              <!-- Fim slides carousel -->
-
-              <!-- Início botões carousel -->
-                <button class="carousel-control-prev" style="left: 0;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" style="right: 0; " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              <!-- Fim botões carousel -->
+            <!-- Início indicadores -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <!-- Fim indicadores -->
+          
+            <!-- Início slides carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://fecomerciomt.org.br/wp-content/uploads/2023/04/BANNER-_-Presidente-da-Fecomercio-MT-participa-de-inauguracao-do-escritorio-da-CNC-em-Portugal.jpg" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="https://fecomerciomt.org.br/wp-content/uploads/2023/04/BANNER-_-Presidente-da-Fecomercio-MT-participa-de-inauguracao-do-escritorio-da-CNC-em-Portugal.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="https://fecomerciomt.org.br/wp-content/uploads/2023/04/BANNER-_-Presidente-da-Fecomercio-MT-participa-de-inauguracao-do-escritorio-da-CNC-em-Portugal.jpg" class="d-block w-100" alt="Slide 3">
+              </div>
+            </div>
+            <!-- Fim slides carousel -->
+          
+            <!-- Início botões carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <!-- Fim botões carousel -->
+            
+          </div>
 
           </div>
               <div class="absolute bottom-0 -left-9 z-[-1]">
@@ -1660,211 +1661,30 @@
     </section>
     <!-- ====== About Section End -->
 
-    <!-- ====== Pricing Section Start -->
-    <section
-      id="pricing"
-      class="relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"
-    >
+    <!-- ====== Impostômetro -->
+    <section id="impostometro" class="snipcss-5DSBv">
       <div class="container">
-        <div class="-mx-4 flex flex-wrap">
-          <div class="w-full px-4">
-            <div class="mx-auto mb-[60px] max-w-[620px] text-center lg:mb-20">
-              <span class="mb-2 block text-lg font-semibold text-primary">
-                Pricing Table
-              </span>
-              <h2
-                class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]"
-              >
-                Our Pricing Plan
-              </h2>
-              <p
-                class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
-              >
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
-              </p>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="buttons">
+              <button id="btn-estadual" type="button" class="btn active">
+                Estadual
+              </button>
+              <button id="btn-nacional" type="button" class="btn">
+                Nacional
+              </button>
             </div>
           </div>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-center">
-          <div class="w-full md:w-1/2 lg:w-1/3">
-            <div
-              class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl border border-primary border-opacity-20 bg-white py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
-              data-wow-delay=".15s
-              "
-            >
-              <span
-                class="mb-2 block text-base font-medium uppercase text-dark"
-              >
-                STARTING FROM
-              </span>
-              <h2 class="mb-9 text-[28px] font-semibold text-primary">
-                $ 19.99/mo
-              </h2>
-
-              <div class="mb-10">
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  1 User
-                </p>
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  All UI components
-                </p>
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  Lifetime access
-                </p>
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  Free updates
-                </p>
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  Use on 1 (one) project
-                </p>
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  3 Months support
-                </p>
-              </div>
-              <div class="w-full">
-                <a
-                  href="javascript:void(0)"
-                  class="inline-block rounded-full border border-[#D4DEFF] bg-transparent py-4 px-11 text-center text-base font-medium text-primary transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
-                >
-                  Purchase Now
-                </a>
-              </div>
-              <span
-                class="absolute left-0 bottom-0 z-[-1] block h-14 w-14 rounded-tr-full bg-primary"
-              >
-              </span>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/3">
-            <div
-              class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl bg-primary bg-gradient-to-b from-primary to-[#179BEE] py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
-              data-wow-delay=".1s
-              "
-            >
-              <span
-                class="mb-5 inline-block rounded-full border border-white bg-white py-2 px-6 text-base font-semibold uppercase text-primary"
-              >
-                POPULAR
-              </span>
-              <span
-                class="mb-2 block text-base font-medium uppercase text-white"
-              >
-                STARTING FROM
-              </span>
-              <h2 class="mb-9 text-[28px] font-semibold text-white">
-                $ 19.99/mo
-              </h2>
-
-              <div class="mb-10">
-                <p class="mb-1 text-base font-medium leading-loose text-white">
-                  5 User
-                </p>
-                <p class="mb-1 text-base font-medium leading-loose text-white">
-                  All UI components
-                </p>
-                <p class="mb-1 text-base font-medium leading-loose text-white">
-                  Lifetime access
-                </p>
-                <p class="mb-1 text-base font-medium leading-loose text-white">
-                  Free updates
-                </p>
-                <p class="mb-1 text-base font-medium leading-loose text-white">
-                  Use on 1 (one) project
-                </p>
-                <p class="mb-1 text-base font-medium leading-loose text-white">
-                  4 Months support
-                </p>
-              </div>
-              <div class="w-full">
-                <a
-                  href="javascript:void(0)"
-                  class="inline-block rounded-full border border-white bg-white py-4 px-11 text-center text-base font-medium text-dark transition duration-300 ease-in-out hover:border-dark hover:bg-dark hover:text-white"
-                >
-                  Purchase Now
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/3">
-            <div
-              class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl border border-primary border-opacity-20 bg-white py-10 px-8 text-center shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12"
-              data-wow-delay=".15s
-              "
-            >
-              <span
-                class="mb-2 block text-base font-medium uppercase text-dark"
-              >
-                STARTING FROM
-              </span>
-              <h2 class="mb-9 text-[28px] font-semibold text-primary">
-                $ 70.99/mo
-              </h2>
-
-              <div class="mb-10">
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  1 User
-                </p>
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  All UI components
-                </p>
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  Lifetime access
-                </p>
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  Free updates
-                </p>
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  Use on unlimited project
-                </p>
-                <p
-                  class="mb-1 text-base font-medium leading-loose text-body-color"
-                >
-                  4 Months support
-                </p>
-              </div>
-              <div class="w-full">
-                <a
-                  href="javascript:void(0)"
-                  class="inline-block rounded-full border border-[#D4DEFF] bg-transparent py-4 px-11 text-center text-base font-medium text-primary transition duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
-                >
-                  Purchase Now
-                </a>
-              </div>
-
-              <span
-                class="absolute right-0 top-0 z-[-1] block h-14 w-14 rounded-bl-full bg-secondary"
-              >
-              </span>
-            </div>
+          <div class="col-12 col-md-6">
+            <iframe id="iframe-estadual" src="https://onwaymidia.com.br/impostometro/novo/widget/mt.html" frameborder="0" width="100%" height="300">
+            </iframe>
+            <iframe id="iframe-nacional" hidden="" src="https://onwaymidia.com.br/impostometro/novo/widget/br2.html" frameborder="0" width="100%" height="300">
+            </iframe>
           </div>
         </div>
       </div>
     </section>
-    <!-- ====== Pricing Section End -->
+    <!-- ====== Impostômetro -->
 
     <!-- ====== Faq Section Start -->
     <section
@@ -5335,6 +5155,32 @@
       
     </script>
 
+    <!-- Script do impostômetro -->
+    <script>
+      // Obtenha referências aos botões e "iframes"
+      const btnEstadual = document.getElementById('btn-estadual');
+      const btnNacional = document.getElementById('btn-nacional');
+      const iframeEstadual = document.getElementById('iframe-estadual');
+      const iframeNacional = document.getElementById('iframe-nacional');
+    
+      // Adicione um manipulador de eventos ao botão Estadual
+      btnEstadual.addEventListener('click', function() {
+        iframeEstadual.removeAttribute('hidden');
+        iframeNacional.setAttribute('hidden', '');
+        btnEstadual.classList.add('active');
+        btnNacional.classList.remove('active');
+      });
+    
+      // Adicione um manipulador de eventos ao botão Nacional
+      btnNacional.addEventListener('click', function() {
+        iframeNacional.removeAttribute('hidden');
+        iframeEstadual.setAttribute('hidden', '');
+        btnNacional.classList.add('active');
+        btnEstadual.classList.remove('active');
+      });
+    </script>
+    <!-- Script do impostômetro -->
+    
     <!-- Incluir Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- Incluir Bootstrap JS -->

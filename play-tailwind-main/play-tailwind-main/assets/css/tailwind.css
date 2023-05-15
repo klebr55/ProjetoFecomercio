@@ -2633,5 +2633,296 @@ body {
     background-color: white;
   }
 
+  /* ================================== CSS DO IMPOSTOMETRO ================================== */
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap'); 
+  body { 
+  /* CSS Variables that may have been missed get put on body */ 
+      --bs-gutter-x:  1.5rem;  
+      --bs-gutter-y:  0;  
+  } 
+
+  * { 
+      box-sizing:  border-box;
+      scrollbar-width: auto; 
+      scrollbar-color: #f58601 #ffffff;
+  } 
+
+  body { 
+      margin:  0; 
+      font-family:  "Roboto", sans-serif; 
+      font-size:  var(--bs-body-font-size); 
+      font-weight:  var(--bs-body-font-weight); 
+      line-height:  var(--bs-body-line-height); 
+      color:  var(--bs-body-color); 
+      text-align:  var(--bs-body-text-align); 
+      background-color:  var(--bs-body-bg); 
+      -webkit-text-size-adjust:  100%; 
+      -webkit-tap-highlight-color:  transparent;
+      background: #fbfbfb;
+  } 
+
+  html { 
+      font-family: "Roboto", sans-serif; 
+      background: #fbfbfb;
+  } 
+
+  :root { 
+      --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+      --bs-body-font-family: var(--bs-font-sans-serif); 
+      --bs-body-font-size: 1rem; 
+      --bs-body-font-weight: 400; 
+      --bs-body-line-height: 1.5; 
+      --bs-body-color: #212529; 
+      --bs-body-bg: #fff;
+  } 
+
+  @media (prefers-reduced-motion: no-preference){ 
+    :root { 
+      scroll-behavior: smooth;
+    } 
+  }     
+
+  #impostometro { 
+      margin-top: 80px; 
+      background: #103e78;
+  } 
+
+  *,:after,:before { 
+      box-sizing: border-box;
+  } 
+
+  :-webkit-scrollbar { 
+      width: 8px;
+  } 
+
+  :-webkit-scrollbar-thumb { 
+      background-color: #f58601; 
+      border-radius: 12px; 
+      border: 0px none #ffffff;
+  } 
+
+  :-webkit-scrollbar-track { 
+      background: #ffffff;
+  } 
+
+  .container { 
+      width: 100%; 
+      padding-right: var(--bs-gutter-x,.75rem); 
+      padding-left: var(--bs-gutter-x,.75rem); 
+      margin-right: auto; 
+      margin-left: auto;
+  } 
+
+  @media (min-width: 576px){ 
+    .container { 
+      max-width: 540px;
+    } 
+  }     
+
+  @media (min-width: 768px){ 
+    .container { 
+      max-width: 720px;
+    } 
+  }     
+
+  @media (min-width: 992px){ 
+    .container { 
+      max-width: 960px;
+    } 
+  }     
+
+  @media (min-width: 1200px){ 
+    .container { 
+      max-width: 1140px;
+    } 
+  }     
+
+  @media (min-width: 1400px){ 
+    .container { 
+      max-width: 1320px;
+    } 
+  }     
+
+  .row { 
+      --bs-gutter-x: 1.5rem; 
+      --bs-gutter-y: 0; 
+      display: flex; 
+      flex-wrap: wrap; 
+      margin-top: calc(-1 * var(--bs-gutter-y)); 
+      margin-right: calc(-.5 * var(--bs-gutter-x)); 
+      margin-left: calc(-.5 * var(--bs-gutter-x));
+  } 
+
+  .row > *  { 
+      flex-shrink: 0; 
+      width: 100%; 
+      max-width: 100%; 
+      padding-right: calc(var(--bs-gutter-x) * .5); 
+      padding-left: calc(var(--bs-gutter-x) * .5); 
+      margin-top: var(--bs-gutter-y);
+  } 
+
+  .col-12 { 
+      flex: 0 0 auto; 
+      width: 100%;
+  } 
+
+  @media (min-width: 576px){ 
+    .col-sm-12 { 
+      flex: 0 0 auto; 
+      width: 100%;
+    } 
+  }     
+
+  @media (min-width: 992px){ 
+    .col-lg-12 { 
+      flex: 0 0 auto; 
+      width: 100%;
+    } 
+  }     
+
+  #impostometro .buttons  { 
+      position: relative; 
+      text-align: center; 
+      width: 100%; 
+      min-height: 20px; 
+      top: 0; 
+      margin-top: 20px;
+  } 
+
+  iframe { 
+      border: 0;
+  } 
+
+  [hidden] { 
+      display: none!important;
+  } 
+
+  button { 
+      border-radius:   0;
+      margin:  0; 
+      font-family:  inherit; 
+      font-size:  inherit; 
+      line-height:  inherit;
+      text-transform: none;
+  } 
+
+  [type="button"],button { 
+      -webkit-appearance: button;
+  } 
+
+  .btn { 
+      display: inline-block; 
+      font-weight: 400; 
+      line-height: 1.5; 
+      color: #212529; 
+      text-align: center; 
+      text-decoration: none; 
+      vertical-align: middle; 
+      cursor: pointer; 
+      -webkit-user-select: none; 
+      -moz-user-select: none; 
+      user-select: none; 
+      background-color: transparent; 
+      border: 1px solid transparent; 
+      padding: .375rem .75rem; 
+      font-size: 1rem; 
+      border-radius: .25rem; 
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  } 
+
+  [type="button"]:not(:disabled),button:not(:disabled) { 
+      cursor: pointer;
+  } 
+
+  #impostometro .buttons .btn  { 
+      background: #ffffff; 
+      border-radius: 4px; 
+      text-align: center; 
+      letter-spacing: 0.02em; 
+      text-transform: uppercase; 
+      padding: 8px 58px; 
+      color: #556476; 
+      margin-right: 16px;
+  } 
+
+  #impostometro .buttons .btn.active  { 
+      background: #eb8100; 
+      color: #ffffff;
+  } 
+
+  .btn:hover { 
+      color: #212529;
+  } 
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap'); 
+  * { 
+      box-sizing:  border-box;
+      scrollbar-width: auto; 
+      scrollbar-color: #f58601 #ffffff;
+  } 
+
+  body { 
+      margin:  0; 
+      font-family:  "Roboto", sans-serif; 
+      font-size:  var(--bs-body-font-size); 
+      font-weight:  var(--bs-body-font-weight); 
+      line-height:  var(--bs-body-line-height); 
+      color:  var(--bs-body-color); 
+      text-align:  var(--bs-body-text-align); 
+      background-color:  var(--bs-body-bg); 
+      -webkit-text-size-adjust:  100%; 
+      -webkit-tap-highlight-color:  transparent;
+      background: #fbfbfb;
+  } 
+
+  html { 
+      font-family: "Roboto", sans-serif; 
+      background: #fbfbfb;
+  } 
+
+  :root { 
+      --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+      --bs-body-font-family: var(--bs-font-sans-serif); 
+      --bs-body-font-size: 1rem; 
+      --bs-body-font-weight: 400; 
+      --bs-body-line-height: 1.5; 
+      --bs-body-color: #212529; 
+      --bs-body-bg: #fff;
+  } 
+
+  @media (prefers-reduced-motion: no-preference){ 
+    :root { 
+      scroll-behavior: smooth;
+    } 
+  }     
+
+  #impostometro { 
+      margin-top: 80px; 
+      background: #103e78;
+  } 
+
+  *,:after,:before { 
+      box-sizing: border-box;
+  } 
+
+  :-webkit-scrollbar { 
+      width: 8px;
+  } 
+
+  :-webkit-scrollbar-thumb { 
+      background-color: #f58601; 
+      border-radius: 12px; 
+      border: 0px none #ffffff;
+  } 
+
+  :-webkit-scrollbar-track { 
+      background: #ffffff;
+  } 
+
+/* ================================== FIM CSS DO IMPOSTOMETRO ================================== */
+
+
 
 
