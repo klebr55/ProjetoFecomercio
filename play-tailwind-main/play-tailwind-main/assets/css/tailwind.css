@@ -2926,8 +2926,8 @@ body {
 /* CSS Notícias */
 .card {
   position: relative; /* Alteração: alterado para 'relative' */
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   color: #2e2d31;
   background: #131313;
   overflow: hidden;
@@ -2936,11 +2936,12 @@ body {
   background-repeat: no-repeat;
   background-position: 0px;
   background-position-y: 0px;
+  z-index: 0;
 }
 
 .card-item {
   margin-top: 50px; /* Ajuste o valor conforme necessário */
-  margin-right: 90px;
+  margin-right: 122px;
 }
 
 .temporary_text {
@@ -2952,7 +2953,7 @@ body {
 
 .card_title {
   font-weight: bold;
-  font-size: medium;
+  font-size: 25px;
 }
 
 .card_content {
@@ -2965,7 +2966,7 @@ body {
   background: #f2f2f2;
   border-top-left-radius: 20px;
     /* edit here to change the height of the content box */
-  transform: translateY(100px);
+  transform: translateY(145px);
   transition: transform .25s;
   overflow: auto;
 }
@@ -2989,12 +2990,12 @@ body {
 
 .card_subtitle {
   display: block;
-  font-size: 12px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .card_description {
-  font-size: 14px;
+  font-size: 20px;
   opacity: 0;
   transition: opacity .5s;
 }
@@ -3020,7 +3021,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 20px;
   background: #183153;
   font-family: "Montserrat", sans-serif;
   box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
@@ -3049,13 +3050,14 @@ body {
   text-align: center;
   text-decoration: none;
   width: 100%;
-  padding: 5px 40px;
+  padding: 12px 55px;
   color: #fff;
-  font-size: 0.800em;
-  font-weight: 700;
+  font-size: 1.100em;
+  font-weight: 900;
   letter-spacing: 0.3em;
   z-index: 20;
   transition: all 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 .btn-card:hover span {
@@ -3077,5 +3079,50 @@ body {
   }
 }
 /* Fim CSS do Botão do Card de Notícias */
+
+.owl-carousel {
+  position: relative;
+}
+
+/* Estilização dos botões de navegação */
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.owl-prev,
+.owl-next {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilização dos pontos de navegação */
+
+.owl-carousel .owl-arrow-prev,
+.owl-carousel .owl-arrow-next {
+  position: absolute;
+  transform: translateY(10);
+  background-color: #fff;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.owl-carousel .owl-arrow-prev {
+  left: 100px;
+}
+
+.owl-carousel .owl-arrow-next {
+  right: 100x;
+}
+
 
 /* CSS Notícias */
