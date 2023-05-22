@@ -2683,11 +2683,28 @@ body {
     } 
   }     
   
+  @media (max-width: 768px) {
+    .mobile-hidden {
+      display: none;
+    }
+  }
+
   #impostometro { 
+      width: 1368px;
       margin-top: 80px; 
       background: #013D81;
+      position: relative;
+      bottom: 20px;
+      right: -200px;
+      z-index: 1;
+      border-radius: 40px;
+      box-shadow: -10px 10px 55px rgba(0, 0, 0, 0.3);
+      justify-content: center;
+      justify-self: center;
+      justify-items: center;
+      align-items: center;
   } 
-
+  
   *,:after,:before { 
       box-sizing: border-box;
   } 
@@ -2713,6 +2730,21 @@ body {
       margin-right: auto; 
       margin-left: auto;
   } 
+
+  @media (max-width: 768px) {
+    #impostometro {
+      aspect-ratio: 16/9;
+      width: auto;
+      max-width: 600px; /* Largura máxima desejada */
+      margin-top: 200px; /* Centralizar horizontalmente */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* Outros estilos... */
+      display: flex;
+      justify-content: center;
+    }
+  }
 
   @media (min-width: 576px){ 
     .container { 
@@ -2921,11 +2953,20 @@ body {
       background: #ffffff;
   } 
 
+  
 /* ================================== FIM CSS DO IMPOSTOMETRO ================================== */
 
 /* CSS Notícias */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+
 .card {
-  position: relative; /* Alteração: alterado para 'relative' */
+  position: relative;
   width: 350px;
   height: 350px;
   color: #2e2d31;
@@ -3022,7 +3063,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background: #183153;
+  background: #005D9A;
   font-family: "Montserrat", sans-serif;
   box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -3034,7 +3075,7 @@ body {
   content: " ";
   width: 0%;
   height: 100%;
-  background: #FFD401;
+  background: #D29643;
   position: absolute;
   transition: all 0.4s ease-in-out;
   right: 0;
@@ -3126,3 +3167,7 @@ body {
 
 
 /* CSS Notícias */
+
+.img1-parceiros {
+  margin-top: 80px;
+}
