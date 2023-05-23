@@ -1772,6 +1772,7 @@ body {
   color: rgb(9 14 52 / var(--tw-text-opacity));
 }
 
+
 .sticky #navbarCollapse li a:hover {
   --tw-text-opacity: 1;
   color: rgb(48 86 211 / var(--tw-text-opacity));
@@ -3171,3 +3172,18 @@ body {
 .img1-parceiros {
   margin-top: 80px;
 }
+
+/*começo do efeito da nav bar*/
+
+nav ul #menu-p  a {
+  display: block;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul #menu-p a:hover {
+  border-bottom-color: #BC9850;
+  width: -100%;
+}
+
+/*final*/
