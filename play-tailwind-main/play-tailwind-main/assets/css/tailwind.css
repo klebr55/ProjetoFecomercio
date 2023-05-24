@@ -713,9 +713,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 6px;
 }
 
+/* Nossa Historia */
 .mb-5 {
   margin-bottom: 1.25rem;
+  border-radius: 5px;
 }
+/* Nossa Historia */
 
 .mb-\[60px\] {
   margin-bottom: 60px;
@@ -2641,6 +2644,7 @@ body {
   /* CSS Variables that may have been missed get put on body */ 
       --bs-gutter-x:  1.5rem;  
       --bs-gutter-y:  0;  
+      transform: translateX(50);
   } 
 
   * { 
@@ -2650,7 +2654,7 @@ body {
   } 
 
   body { 
-      margin:  0; 
+      margin: 0; 
       font-family:  "Roboto", sans-serif; 
       font-size:  var(--bs-body-font-size); 
       font-weight:  var(--bs-body-font-weight); 
@@ -2675,7 +2679,7 @@ body {
       --bs-body-font-weight: 400; 
       --bs-body-line-height: 1.5; 
       --bs-body-color: #013D81; 
-      --bs-body-bg: #fff;
+      --bs-body-bg: #FFFFFF;
   } 
 
   @media (prefers-reduced-motion: no-preference){ 
@@ -2691,19 +2695,16 @@ body {
   }
 
   #impostometro { 
-      width: 1368px;
+      width: 1200px;
+      height: 350px;
       margin-top: 80px; 
-      background: #013D81;
+      background: #ffffff;
       position: relative;
-      bottom: 20px;
-      right: -200px;
+      bottom: 40px;
       z-index: 1;
       border-radius: 40px;
-      box-shadow: -10px 10px 55px rgba(0, 0, 0, 0.3);
-      justify-content: center;
-      justify-self: center;
-      justify-items: center;
-      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
   } 
   
   *,:after,:before { 
@@ -2833,7 +2834,7 @@ body {
   } 
 
   button { 
-      border-radius:   0;
+      border-radius: 0;
       margin:  0; 
       font-family:  inherit; 
       font-size:  inherit; 
@@ -2906,8 +2907,8 @@ body {
       text-align:  var(--bs-body-text-align); 
       background-color:  var(--bs-body-bg); 
       -webkit-text-size-adjust:  100%; 
-      -webkit-tap-highlight-color:  transparent;
-      background: #fbfbfb;
+      -webkit-tap-highlight-color: transparent;
+      background: #ffffff;
   } 
 
   html { 
@@ -2933,7 +2934,7 @@ body {
 
   #impostometro { 
       margin-top: 80px; 
-      background: #013D81;
+      background: #003E7F;
   } 
 
   *,:after,:before { 
@@ -2990,7 +2991,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   padding: 6px 12px;
-  color: #f8f8f8;
+  color: #ffffff;
 }
 
 .card_title {
@@ -3005,7 +3006,7 @@ body {
     /* edit the width to fit card */
   width: 100%;
   padding: 30px;
-  background: #f2f2f2;
+  background: #ffffff;
   border-top-left-radius: 20px;
     /* edit here to change the height of the content box */
   transform: translateY(145px);
@@ -3022,7 +3023,6 @@ body {
   height: 100px;
   transform: rotate(-175deg);
   border-radius: 50%;
-  box-shadow: inset 48px 48px #f2f2f2;
 }
 
 .card_title {
@@ -3040,6 +3040,7 @@ body {
   font-size: 20px;
   opacity: 0;
   transition: opacity .5s;
+  text-align: justify;
 }
 
 .card:hover .card_content {
@@ -3187,3 +3188,7 @@ nav ul #menu-p a:hover {
 }
 
 /*final*/
+
+#navbarstrap {
+box-shadow: black 1px 1px 10px;
+}
