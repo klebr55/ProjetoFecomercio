@@ -14,11 +14,22 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon.svg">
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/style.scss" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css.map" />
 
     <!-- Owl Caroulsel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Owl Caroulsel -->
+
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" />
+    <!-- Flickity CSS -->
+
+    <!-- Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Awesome -->
 
     <!-- ==== WOW JS ==== -->
     <script src="assets/js/wow.min.js"></script> 
@@ -209,75 +220,35 @@
     <!-- ====== Fim da Seção Navbar # Guilherme-->
 
     <!-- ====== Hero Section Start -->
-    <section class="hero">
-      <div class="content">
-        <div
-          id="home"
-          class="pt-[120px] md:pt-[130px] lg:pt-[160px]">
-          <div class="container" style="align-items: center;" id="hero-container">
-            <div class="-mx-4 flex flex-wrap items-center">
-              <div class="w-full px-4">
-                <div
-                  class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
-                  data-wow-delay=".2s"
-                >
-                <h1 id="color-titulo" class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]">Acompanhe os principais destaques da semana</h1>
-                  <p
-                    class="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
-                  id="nome-extenso">
-                  Sobre o sindicato do Comercio Atacadista e Distribuidor do Estado de Mato Grosso
-                  </p>
-                  <ul class="mb-10 flex flex-wrap items-center justify-center">
-                    <li>
-                      <a> </a>
-                    </li>
-                  </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div style="z-index: 1; width: 1300px;" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-
-                <!-- Início indicadores -->
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <!-- Fim indicadores -->
-              
-                <!-- Início slides carousel -->
-                <div class="carousel-inner h-100">
-                  <div class="carousel-item active">
-                    <img src="assets/images/hero/BANNER-_-Presidente-da-Fecomercio-MT-participa-de-inauguracao-do-escritorio-da-CNC-em-Portugal.jpg" class="d-block" alt="Slide 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://fecomerciomt.org.br/wp-content/uploads/2023/04/BANNER-_-Presidente-da-Fecomercio-MT-participa-de-inauguracao-do-escritorio-da-CNC-em-Portugal.jpg" class="d-block" alt="Slide 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://fecomerciomt.org.br/wp-content/uploads/2023/04/BANNER-_-Presidente-da-Fecomercio-MT-participa-de-inauguracao-do-escritorio-da-CNC-em-Portugal.jpg" class="d-block" alt="Slide 3">
-                  </div>
-                </div>
-                <!-- Fim slides carousel -->
-              
-                <!-- Início botões carousel -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-                <!-- Fim botões carousel -->
-                
-              </div>
-            </div>
-          </div>
+    <div class="hero-slider wow fadeInDown" data-carousel data-wow-delay=".2s">
+      <div class="carousel-cell" style="background-image:url(https://fecomerciomt.org.br/wp-content/uploads/2023/05/BANNER_Maio-acumula-mais-uma-queda-semanal-no-preco-da-cesta-basica-em-Cuiaba-1024x477.jpg);">
+        <div class="overlay"></div>
+        <div class="inner">
+          <h3 class="subtitle">Destaques da Semana:</h3>
+          <h2 class="title">Maio acumula mais uma queda semanal <br>
+            no preço da cesta básica em Cuiabá</h2>
+          <a href="https://fecomerciomt.org.br/maio-acumula-mais-uma-queda-semanal-no-preco-da-cesta-basica-em-cuiaba/" target="_blank" class="btn">Saiba mais</a>
         </div>
       </div>
-      <div class="waves"></div>
-    </section>
+    <div class="carousel-cell" style="background-image:url(https://fecomerciomt.org.br/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-24-at-10.30.32-1024x477.jpeg);">
+        <div class="overlay"></div>
+        <div class="inner">
+          <h3 class="subtitle">Destaques da Semana:</h3>
+          <h2 class="title">Intenção de Consumo das Famílias cuiabanas <br>
+            aumenta pelo quarto mês consecutivo</h2>
+          <a href="https://fecomerciomt.org.br/intencao-de-consumo-das-familias-cuiabanas-aumenta-pelo-quarto-mes-consecutivo/" target="_blank" class="btn">Saiba mais</a>
+        </div>
+      </div>
+    <div class="carousel-cell" style="background-image:url(https://fecomerciomt.org.br/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-12-at-16.13.45.jpeg);">
+        <div class="overlay"></div>
+        <div class="inner">
+          <h3 class="subtitle">Destaques da Semana:</h3>
+          <h2 class="title">Entidades realizadoras da FIT Pantanal 2023 <br>
+            apresentam balanço geral do evento</h2>
+          <a href="https://fecomerciomt.org.br/entidades-realizadoras-da-fit-pantanal-2023-apresentam-balanco-geral-do-evento/" target="_blank" class="btn">Saiba mais</a>
+        </div>
+      </div>
+    </div>
     <!-- ====== Hero Section End -->
 
     <!-- Notícias -->
@@ -348,7 +319,7 @@
                       <p class="card_description">O Sistema Fecomércio-MT, por meio do Serviço Nacional de Aprendizagem Comercial em Mato Grosso (Senac-MT), promove, 
                         nesta quinta e sexta-feira (18 e 19), capacitações para empresários e colaboradores do mercado óptico de Cuiabá e região em parceria como 
                         Sindicato do Comércio de Óptica (Sindióptica-MT).
-                        <br></br>
+                        <br> <br>
                         Uma palestra e uma imersão com o empresário, palestrante e mentor, Thiago Salvador, serão realizadas para empresários, 
                         gerentes e colaboradores de lojas do segmento, na esteira de ações preventivas com a saúde visual da população e contra irregularidades 
                         em óticas atuantes no estado.</p>
@@ -1607,6 +1578,17 @@
     </footer>
     <!-- ====== Fim do Rodapé -->
 
+    <!-- Botão Whatsapp -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <div class="floating_btn">
+      <a target="_blank" href="https://wa.me/+556599007555">
+        <div class="contact_icon">
+          <i class="fa fa-whatsapp my-float"></i>
+        </div>
+      </a>
+    </div>
+    <!-- Botão Whatsapp -->
+
     <!-- ====== Back To Top Start -->
     <a
       href="javascript:void(0)"
@@ -1787,6 +1769,44 @@
         });
       });
     </script>
+
+    
+    <!-- Hero Script -->
+
+    <!-- Flickity JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    <!-- Flickity JS -->
+
+    <script>
+      var options = {
+        accessibility: true,
+        prevNextButtons: true,
+        pageDots: true,
+        setGallerySize: false,
+        arrowShape: {
+          x0: 10,
+          x1: 60,
+          y1: 50,
+          x2: 60,
+          y2: 45,
+          x3: 15
+        }
+      };
+      
+      var carousel = document.querySelector('[data-carousel]');
+      var slides = document.getElementsByClassName('carousel-cell');
+      var flkty = new Flickity(carousel, options);
+      
+      
+      flkty.on('scroll', function () {
+        flkty.slides.forEach(function (slide, i) {
+          var image = slides[i];
+          var x = (slide.target + flkty.x) * -1/3;
+          image.style.backgroundPosition = x + 'px center';
+        });
+      });
+    </script>
+    <!-- Hero Script Fim -->
 
     <!-- Incluir Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
