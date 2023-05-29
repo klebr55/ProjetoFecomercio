@@ -12,34 +12,7 @@
     } else {
       ud_header.classList.remove("sticky");
     }
-
-    // === logo change
-    if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/logo/Logo-SINCAD-MT.png";
-    } else {
-      logo.src = "assets/images/logo/Logo-SINCAD-MT.png";
-    }
-
-    // show or hide the back-top-top button
-    const backToTop = document.querySelector(".back-to-top");
-    if (
-      document.body.scrollTop == 50 ||
-      document.documentElement.scrollTop == 50
-    ) {
-      backToTop.style.display = "flex";
-    } else {
-      backToTop.style.display = "none";
-    }
   };
-
-  // ===== responsive navbar
-  let navbarToggler = document.querySelector("#navbarToggler");
-  const navbarCollapse = document.querySelector("#navbarCollapse");
-
-  navbarToggler.addEventListener("click", () => {
-    navbarToggler.classList.toggle("navbarTogglerActive");
-    navbarCollapse.classList.toggle("hidden");
-  });
 
   // ===== Faq accordion
   const faqs = document.querySelectorAll(".single-faq");
