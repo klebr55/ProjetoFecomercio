@@ -59,4 +59,3 @@
     scrollTo(document.documentElement);
   };
 })();
-
