@@ -1,0 +1,52 @@
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+  }
+  
+  .download-button::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background: linear-gradient(45deg, #00f, #0f0, #f00);
+    opacity: 0.8;
+    filter: blur(20px);
+    z-index: -1;
+    transform: scale(0.8);
+    transition: all 0.7s ease;
+  }
+  
+  .download-button:hover {
+    color: #000;
+    background-color: #ececec;
+    outline: 1px solid #000000;
+  }
+  
+  .download-button:hover .download-icon {
+    background-image: url('https://img.icons8.com/?size=512&id=366&format=png');
+  }
+  
+  .download-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://cdn.discordapp.com/attachments/1084516858335613079/1112872341895118938/download.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  

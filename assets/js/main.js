@@ -59,3 +59,6 @@
     scrollTo(document.documentElement);
   };
 })();
+
+/* Download button */
+
