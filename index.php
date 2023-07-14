@@ -11,8 +11,8 @@
     <title>
      Sincad-MT | Sincad-MT
     </title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png"/>
     <link rel="stylesheet" href="assets/css/preloadersincadmt.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png"/>
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
     <link rel="stylesheet" href="assets/css/style.scss" />
