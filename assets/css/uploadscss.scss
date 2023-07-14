@@ -1,0 +1,32 @@
+input[type=file] {
+  width: 100%;
+  z-index: 50;
+  height: 38px;
+  cursor: pointer;
+  opacity: 0;
+  border: 1px solid #000;
+}
+
+$purple: #5c4084;
+
+.container2 {
+ padding: 4rem 5rem;
+ background-color: #fff;
+ border-radius: 1rem;
+ width: 100%;
+ max-width: 45rem;
+}
+
+.btn.btn-primary {
+ background-color: $purple;
+ border-color: $purple;
+ outline: none;
+ &:hover {
+   background-color: darken($purple, 10%);
+   border-color: darken($purple, 10%);
+ }
+ &:active, &:focus {
+   background-color: lighten($purple, 5%);
+   border-color: lighten($purple, 5%);
+ }
+}

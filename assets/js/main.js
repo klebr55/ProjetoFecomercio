@@ -192,7 +192,7 @@ window.addEventListener("DOMContentLoaded", function() {
   const meuBotao2 = document.querySelector("#estatuto");
   const meuBotao3 = document.querySelector("#ata");
   const meuBotao4 = document.querySelector("#presidente");
-  const meuBotao5 = document.querySelector("#diretoria-executiva");
+  const meuBotao5 = document.querySelector("#login-button");
   const meuBotao6 = document.querySelector("#conselho-fiscal");
   const meuBotao7 = document.querySelector("#delegados");
   const meuBotao8 = document.querySelector("#ata-documentos");
@@ -223,7 +223,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
   meuBotao5.addEventListener("click", function(event) {
     event.preventDefault();
-    window.open(" ", " ");
+    window.open("signin.html", "_blank ");
   });
 
   meuBotao6.addEventListener("click", function(event) {

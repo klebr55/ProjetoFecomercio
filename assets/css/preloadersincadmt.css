@@ -1,0 +1,84 @@
+body {
+  overflow: hidden;
+}
+
+#index-preloader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999900000;
+    overflow: hidden;
+}
+.preloader-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Layer_4_Image-2 {
+    animation: animateOne 1.4s linear 0.3s infinite alternate;
+}
+
+#Layer_3_Image-2 {
+    animation: animateTwo 1.4s linear 0.3s infinite alternate;
+}
+
+#Layer_2_Image-2 {
+    animation: animateThree 1.4s linear 0.3s infinite alternate;
+}
+
+@keyframes animateOne {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+@keyframes animateTwo {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+      }
+      20% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+@keyframes animateThree {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+      }
+      20% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }

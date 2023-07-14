@@ -1,5 +1,9 @@
-/* Hero CSS */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrQ.ttf) format('truetype');
+}
 
 body {
   background-color: #ffffff;
@@ -21,12 +25,14 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
 .hero-slider .carousel-cell {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .hero-slider .carousel-cell .inner {
   position: relative;
   top: 50%;
@@ -34,9 +40,10 @@ body {
   color: white;
   text-align: center;
 }
+
 .hero-slider .carousel-cell .inner .subtitle {
   font-family: 'Roboto Slab', serif;
-  font-weight: 400; 
+  font-weight: 400;
   font-size: 2.2rem;
   line-height: 1.2em;
   font-weight: 200;
@@ -45,6 +52,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 5px;
 }
+
 .hero-slider .carousel-cell .inner .title {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -54,6 +62,7 @@ body {
   letter-spacing: 3px;
   margin-bottom: 40px;
 }
+
 .hero-slider .carousel-cell .inner .btn {
   border: 1px solid #fff;
   padding: 14px 18px;
@@ -65,25 +74,31 @@ body {
   text-decoration: none;
   transition: all 0.2s ease;
 }
+
 .hero-slider .carousel-cell .inner .btn:hover {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
   color: #000;
 }
+
 .hero-slider .flickity-prev-next-button {
   width: 80px;
   height: 80px;
   background: transparent;
 }
+
 .hero-slider .flickity-prev-next-button:hover {
   background: transparent;
 }
+
 .hero-slider .flickity-prev-next-button .arrow {
   fill: white;
 }
+
 .hero-slider .flickity-page-dots {
   bottom: 30px;
 }
+
 .hero-slider .flickity-page-dots .dot {
   width: 30px;
   height: 4px;
@@ -92,10 +107,26 @@ body {
   border: 0 solid white;
   border-radius: 0;
 }
+
 .hero-slider .flickity-page-dots .dot.is-selected {
   background: #f6be00;
   border: 0 solid #f6be00;
 }
 
-/* Hero CSS *//*# sourceMappingURL=style.css.map */
+@media (max-width: 768px) {
+  .hero-slider .carousel-cell .inner .subtitle {
+    font-size: 1.5rem;
+  }
 
+  .hero-slider .carousel-cell .inner .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-slider .carousel-cell .inner .btn {
+    padding: 10px 14px;
+    font-size: 0.7rem;
+  }
+}
+
+/* Hero CSS *//*# sourceMappingURL=style.css.map */

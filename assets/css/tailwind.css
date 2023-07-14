@@ -1746,11 +1746,6 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.sticky #navbarToggler span {
-  --tw-bg-opacity: 1;
-  background-color: rgb(9 14 52 / var(--tw-bg-opacity));
-}
-
 .sticky #navbarCollapse li a {
   --tw-text-opacity: 1;
   color: rgb(9 14 52 / var(--tw-text-opacity));
@@ -1796,26 +1791,6 @@ body {
   background-color: rgb(9 14 52 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.navbarTogglerActive > span:nth-child(1) {
-  top: 7px;
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.navbarTogglerActive > span:nth-child(2) {
-  opacity: 0;
-}
-
-.navbarTogglerActive > span:nth-child(3) {
-  top: -8px;
-  --tw-rotate: 135deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .after\:absolute::after {
@@ -2659,7 +2634,7 @@ body {
   } 
 
   :root { 
-      --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+      --bs-font-sans-serif: "Roboto Slab", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       --bs-body-font-family: var(--bs-font-sans-serif); 
       --bs-body-font-size: 1rem; 
       --bs-body-font-weight: 400; 
@@ -2941,220 +2916,13 @@ body {
       background: #ffffff;
   } 
 
-  
+  @media (max-width: 768px) {
+    .mobile-hidden {
+      display: none;
+    }
+  }
+
 /* ================================== FIM CSS DO IMPOSTOMETRO ================================== */
-
-/* CSS Notícias */
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 20px;
-  justify-items: center;
-}
-
-.card {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  color: #2e2d31;
-  background: #131313;
-  overflow: hidden;
-  border-radius: 20px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0px;
-  background-position-y: 0px;
-  z-index: 0;
-}
-
-.card-item {
-  margin-top: 50px; /* Ajuste o valor conforme necessário */
-  margin-right: 122px;
-}
-
-.temporary_text {
-  font-weight: bold;
-  font-size: 24px;
-  padding: 6px 12px;
-  color: #ffffff;
-}
-
-.card_title {
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.card_content {
-  position: relative;
-  left: 0;
-  bottom: 0;
-    /* edit the width to fit card */
-  width: 100%;
-  padding: 30px;
-  background: #ffffff;
-  border-top-left-radius: 20px;
-    /* edit here to change the height of the content box */
-  transform: translateY(145px);
-  transition: transform .25s;
-  overflow: auto;
-}
-
-.card_content::before {
-  content: '';
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-}
-
-.card_title {
-  color: #131313;
-  line-height: 15px;
-}
-
-.card_subtitle {
-  display: block;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.card_description {
-  font-size: 20px;
-  opacity: 0;
-  transition: opacity .5s;
-  text-align: justify;
-}
-
-.card:hover .card_content {
-  transform: translateY(0);
-}
-
-.card:hover .card_description {
-  opacity: 1;
-  transition-delay: .25s;
-}
-
-#titulo-noticia {
-  margin-top: 90px;
-  text-align: center;
-  font-size: 45px;
-}
-
-/* Início CSS do Botão do Card de Notícias */
-.btn-card {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  background: #005D9A;
-  font-family: "Montserrat", sans-serif;
-  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  border: none;
-  margin-top: 10px;
-}
-
-.btn-card:after {
-  content: " ";
-  width: 0%;
-  height: 100%;
-  background: #D29643;
-  position: absolute;
-  transition: all 0.4s ease-in-out;
-  right: 0;
-}
-
-.btn-card:hover::after {
-  right: auto;
-  left: 0;
-  width: 100%;
-}
-
-.btn-card span {
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  padding: 12px 55px;
-  color: #fff;
-  font-size: 1.100em;
-  font-weight: 900;
-  letter-spacing: 0.3em;
-  z-index: 20;
-  transition: all 0.3s ease-in-out;
-  white-space: nowrap;
-}
-
-.btn-card:hover span {
-  color: #183153;
-  animation: scaleUp 0.3s ease-in-out;
-}
-
-@keyframes scaleUp {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(0.95);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-/* Fim CSS do Botão do Card de Notícias */
-
-.owl-carousel {
-  position: relative;
-}
-
-/* Estilização dos botões de navegação */
-.owl-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  z-index: 1;
-}
-
-.owl-prev,
-.owl-next {
-  background-color: #fff;
-  color: #000;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-/* Estilização dos pontos de navegação */
-
-.owl-carousel .owl-arrow-prev,
-.owl-carousel .owl-arrow-next {
-  position: absolute;
-  transform: translateY(10);
-  background-color: #fff;
-  padding: 0px;
-  border: none;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.owl-carousel .owl-arrow-prev {
-  left: 100px;
-}
-
-.owl-carousel .owl-arrow-next {
-  right: 100x;
-}
-
-
-/* CSS Notícias */
 
 .img1-parceiros {
   margin-top: 80px;
@@ -3303,9 +3071,8 @@ a{
   hyphens: auto;
 }
 
-/* Css do login */
-
-button {
+/* CSS do botão de login */
+#login-button {
   --primary-color: #003E7F;
   --secondary-color: #fff;
   --hover-color: #f58601;
@@ -3324,13 +3091,13 @@ button {
   font-weight: bold;
 }
 
-button .arrow-wrapper {
+#login-button .arrow-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-button .arrow {
+#login-button .arrow {
   margin-top: 1px;
   width: var(--arrow-width);
   background: var(--primary-color);
@@ -3339,7 +3106,7 @@ button .arrow {
   transition: 0.2s;
 }
 
-button .arrow::before {
+#login-button .arrow::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -3353,16 +3120,100 @@ button .arrow::before {
   transform: rotate(-45deg);
 }
 
-button:hover {
+#login-button:hover {
   background-color: var(--hover-color);
 }
 
-button:hover .arrow {
+#login-button:hover .arrow {
   background: var(--secondary-color);
 }
 
-button:hover .arrow:before {
+#login-button:hover .arrow:before {
   right: 0;
 }
+/* FIM CSS DO BOTÃO LOGIN */
 
-/* Css do login */
+/* Mapa Google Responsivo */
+
+@media (max-width: 767px) {
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+.menu-button::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+}
+
+.navbar-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+}
+
+.download-button::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: linear-gradient(45deg, #00f, #0f0, #f00);
+  opacity: 0.8;
+  filter: blur(20px);
+  z-index: -1;
+  transform: scale(0.8);
+  transition: all 0.7s ease;
+}
+
+.download-button:hover {
+  color: #000;
+  background-color: #ececec;
+  outline: 1px solid #000000;
+}
+
+.download-button:hover .download-icon {
+  background-image: url('https://img.icons8.com/?size=512&id=366&format=png');
+}
+
+.download-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://cdn.discordapp.com/attachments/1084516858335613079/1112872341895118938/download.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  vertical-align: middle;
+}
